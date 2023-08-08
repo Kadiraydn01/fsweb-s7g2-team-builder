@@ -8,7 +8,7 @@ const App = () => {
     {
       name: "Burak Cevizli",
       email: "crazy_boy@hotmail.com",
-      role: "Slave",
+      role: "CEO",
     },
   ]);
 
