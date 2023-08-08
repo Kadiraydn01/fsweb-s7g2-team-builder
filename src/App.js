@@ -1,13 +1,13 @@
 // App.js
 import React, { useState } from "react";
-import Form from "./Form";
+import Form1 from "./Form";
 
 const App = () => {
   const [uyeler, setUyeler] = useState([
-    { name: "Kadir Aydin", email: "crazy_boy@hotmail.com", role: "Patron" },
+    { name: "Kadir Aydin", email: "whyalwaysme@hotmail.com", role: "Boss" },
     {
       name: "Burak Cevizli",
-      email: "whyalwaysme@hotmail.com",
+      email: "crazy_boy@hotmail.com",
       role: "Slave",
     },
   ]);
@@ -22,13 +22,13 @@ const App = () => {
       <ul>
         {uyeler.map((member, index) => (
           <li key={index}>
-            <strong>Name:</strong> {member.name}, <strong>Email:</strong>{" "}
-            {member.email}, <strong>Role:</strong> {member.role}
+            <strong>İsim:</strong> {member.name}, <strong>Email:</strong>{" "}
+            {member.email}, <strong>Görev:</strong> {member.role}
           </li>
         ))}
       </ul>
       <h2>Add New Member</h2>
-      <Form addMember={addMember} />
+      <Form1 addMember={addMember} />
     </div>
   );
 };
