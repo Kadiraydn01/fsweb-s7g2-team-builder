@@ -18,8 +18,9 @@ const Form1 = ({ addMember }) => {
 
   return (
     <Form onSubmit={handleSubmit} className="login-form">
+      <br />
       <FormGroup>
-        <Label htmlFor="user-name">isim:</Label>
+        <Label htmlFor="user-name">İsim:</Label>
         <Input
           type="name"
           value={name}
@@ -45,7 +46,11 @@ const Form1 = ({ addMember }) => {
         />
       </FormGroup>
       <br />
-      <Button type="submit">Add Member</Button>
+      <FormGroup>
+        <Button className="button-sa" type="submit">
+          Add Member
+        </Button>
+      </FormGroup>
     </Form>
   );
 };

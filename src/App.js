@@ -17,13 +17,21 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="member-bar">
       <h1>Team Members</h1>
-      <ul>
+      <ul className="ul-bar">
         {uyeler.map((member, index) => (
-          <li key={index}>
-            <strong>İsim:</strong> {member.name}, <strong>Email:</strong>{" "}
-            {member.email}, <strong>Görev:</strong> {member.role}
+          <li key={index} className="li-tagi">
+            <h2>
+              <strong>İsim:</strong> {member.name}
+            </h2>
+            <h2>
+              <strong>Email:</strong>
+              {member.email}
+            </h2>
+            <h2>
+              <strong>Görev:</strong> {member.role}
+            </h2>
           </li>
         ))}
       </ul>
